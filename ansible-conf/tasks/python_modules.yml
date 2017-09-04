@@ -1,0 +1,6 @@
+---
+
+- name: CoreOS | Install required python modules
+  pip:
+    name: "{{ item }}"
+  with_items: "{{pip_python_modules}}"

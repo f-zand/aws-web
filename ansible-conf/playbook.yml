@@ -1,0 +1,10 @@
+---
+
+- name: bootstrapping coreos with python pypy
+  hosts: cluster
+  become: yes
+  gather_facts: False
+  tasks:
+    - include: tasks/coreos.yml
+  vars_files:
+    - defaults/main.yml

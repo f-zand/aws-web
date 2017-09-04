@@ -1,0 +1,4 @@
+---
+pip_python_modules:
+  - docker-py
+static_files: 'files'

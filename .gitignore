@@ -1,2 +1,3 @@
 files/id_rsa*
 .DS_Store
+ansible-conf/inventory.cfg
