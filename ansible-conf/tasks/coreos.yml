@@ -1,0 +1,7 @@
+---
+
+- name: bootstraping Container Linux by CoreOS to apply ansible plybooks on that
+  include: coreos/bootstrap.yml
+
+- name: install python modules via pip
+  include: coreos/python_modules.yml
