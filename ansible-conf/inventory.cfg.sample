@@ -1,0 +1,11 @@
+[local]
+localhost ansible_host=127.0.0.1
+
+#Your Public DNS, public IP, and Private IP are available on Amazon Management Console
+[cluster]
+core-01 ansible_host=[PUBLIC_DNS] pub_ip=[PUBLIC_IP] priv_ip=[PRIVATE_IP]
+
+[cluster:vars]
+ansible_user=core
+ansible_ssh_private_key_file=files/id_rsa
+ansible_python_interpreter="/opt/bin/python"
